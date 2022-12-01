@@ -1,0 +1,74 @@
+
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsthm, amsmath}
+\usepackage{nccmath} %Para centrar ecuaciones
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{algorithmic}
+\usepackage{whilecode2}
+\usepackage{verbatim}
+
+\graphicspath{ {Images/} }
+    \title{\textbf{Práctica 4}}
+    \author{Juan Manuel Cardeñosa Borrego}
+    \date{}
+    
+    \addtolength{\topmargin}{-3cm}
+    \addtolength{\textheight}{3cm}
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\section*{Ejercicio 1}
+El desarrollo del cálculo de la menor codificación del programa WHILE "diverger".
+\\
+En este ejercicio he planteado el siguiente código (con 0 argumentos):\\
+\begin{whilecode}[H]
+
+$X_1 \Assig X_1 + 1$\;
+ \While{$X_3 \not = 0$}{
+
+ \DefaultVar{1}\Assig\DefaultVar{1}
+
+ }
+\end{whilecode}
+
+Además, ha obtenido en la codificación el número natural: 9678369754
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.70]{Ejercicio1.png}
+\end{figure}
+
+
+\section*{Ejercicio 2}
+El código Octave que hace un print de todos los vectores, y una captura de ejemplo de ejecución.\\
+
+\verbatiminput{allVector.m}
+
+Ejemplo de ejecución en la siguiente hoja, como es un buble infinito, dado que los números naturales son infinitos, he realizado una captura de los 16 primeros.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.60]{Ejercicio2.png}
+\end{figure}
+
+\newpage
+\section*{Ejercicio 3}
+El código Octave que hace un print de todos los programas WHILE, y una captura de ejemplo de ejecución.
+
+\verbatiminput{allProgramWhile.m}
+
+Como es un buble infinito, ya que hay tantos programas while como números naturales, es decir, infinitos, he realizado una captura de los 30 primeros.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.60]{Ejercicio3.png}
+\end{figure}
+
+
+\end{document}
+
